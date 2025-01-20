@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+#navegador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#A294F9, #CDC1FF);;
+    width: 100%;
+    padding: 15px;
+    color: white;
+}
+
+#navegador li:hover {
+    color: #E5D9F2;
+    cursor: pointer;
+}
+
+nav div button {
+    color: white;
+    background-color: #CDC1FF;
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav div button:hover{
+    background: none;
+    cursor: pointer;
+}
+
+#navegador img {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.indice_derecha {
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+    align-items: center;
+}
+
+.indice_derecha li {
+    margin-right: 20px;
+}
+
+.indice_derecha li:last-child {
+    margin-right: 0px;
+}
+
+#cabecera {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: #E5D9F2;
+}
+
+#cabecera h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#cabecera p {
+    font-size: 20px;
+}
+
+.spiderman {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.btn1 {
+    text-align: center;
+    color:white;
+    background-color: #A294F9;
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin: 25px;
+}
+
+.btn2 {
+    text-align: center;
+    color:white;
+    background: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    margin: 25px;
+    border: 1px solid white;
+    background-color: #2f2b498a;
+}
+
+.btn2 img {
+    width: 25px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.btn1:hover {
+    background: none;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background: #A294F9;
+}
+
+#cabecera h2 {
+    font-size: 20px;
+}
+
+.articulo {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.text_center {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.articulo div:first-child h2 {
+    font-size: 50px;
+}
+
+.allFunkos {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.funkos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.funkos img {
+    width: 200px;
+    height: 175px;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 15px;
+    width: 300px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.view_more {
+    margin: auto;
+}
+
+.about_us {
+    background-color: #E5D9F2;
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    *{
+        font-size: 16px;
+    }
+    #navegador { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #navegador img {
+        margin-left: 0;
+    }
+
+    #navegador li {
+        text-align: center;
+    }
+
+    .indice_derecha {
+        margin-right: 0;
+    }
+
+    nav div button {
+        padding: 15px 30px;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+
+    #cabecera h1 {
+        font-size: 20px;
+    }
+
+    #cabecera p {
+        font-size: 18px;
+    }
+    
+    .spiderman {
+        width: 350px;
+    }
+
+    .btn1 {
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+    
+    .btn2 {
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 14px;
+        
+    }
+    
+    .btn2 img {
+        width: 20px;
+    }
+
+    #cabecera h2 {
+        font-size: 18px;
+    }
+
+    .articulo {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .text_center {
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    .articulo div:first-child h2 {
+        font-size: 40px;
+    }
+    
+    
+    .allFunkos {
+        margin-top: 25px;
+        gap: 50px;
+        width: 100%;
+    }
+    
+    .funkos img {
+        width: 175px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .description {
+        font-size: 13px;
+        width: 300px;
+    }
+
+    .articulo h3 {
+        font-size: 13px;
+    }
+    
+  }
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    } 
+
+    #navegador img {
+        margin-left: 0;
+    }
+
+    .indice_derecha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .indice_derecha li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav div button {
+        padding: 15px 25px;
+        margin-left: 0;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    #cabecera h1 {
+        font-size: 18px;
+    }
+
+    #cabecera p {
+        font-size: 16px;
+    }
+    
+    .spiderman {
+        width: 300px;
+    }
+
+    .btn1 {
+        padding: 15px 25px;
+        border-radius: 25px;
+        font-size: 13px;
+    }
+    
+    .btn2 {
+        padding: 15px 25px;
+        border-radius: 25px;
+        font-size: 13px;
+        
+    }
+    
+    .btn2 img {
+        width: 18px;
+    }
+
+    #cabecera h2 {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .articulo h3 {
+        font-size: 12px;
+    }
+
+    .articulo div:first-child h2 {
+        font-size: 30px;
+    }
+   }
+
+
+
+
