@@ -200,7 +200,40 @@ nav div button:hover{
 
 .about_us {
     background-color: #E5D9F2;
+    padding-top: 75px;
+    padding-bottom: 75px;  
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    position: relative;
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+
+.about_us_left {
+    width: 900px;
+    margin-right: 20px;
+}
+
+.about_us_left h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about_us_left p {
+    font-size: 15px;
+}
+
+.about_us_right {
+   
 }
 
 @media screen and (max-width: 1200px) {
