@@ -16,7 +16,11 @@
     color: white;
 }
 
-#navegador li:hover {
+.sections{
+    margin-right: 20px;
+}
+
+.sections:hover {
     color: #E5D9F2;
     cursor: pointer;
 }
