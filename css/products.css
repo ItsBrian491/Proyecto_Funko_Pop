@@ -11,14 +11,17 @@ html {
 }
 
 #cabecera-form {
-    background: linear-gradient(#A294F9, #CDC1FF);
+    background: linear-gradient(#A294F9, #795fe0);
     width: 100%;
-    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #cabecera-form h1 {
     padding-top: 25px;
-    text-align: center;
     font-size: 25px;
     color: white;
     margin-bottom: 25px;
@@ -26,9 +29,11 @@ html {
 
 .catalogo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .products {
@@ -38,7 +43,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-radius: 30px;
     margin-bottom: 50px;
 }
@@ -62,4 +66,21 @@ html {
 .cart:hover {
     background-color: rgb(170, 168, 168);
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    *{
+        font-size: 16px;
+    } 
+
+    #navegador li{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    } 
 }
