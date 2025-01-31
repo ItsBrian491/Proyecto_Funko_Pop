@@ -66,13 +66,14 @@ html {
 }
 
 li:hover {
-    color: #E5D9F2;
+    background: linear-gradient(#CDC1FF, #A294F9);
     cursor: pointer;
+    border-radius: 25px;
 }
 
 nav div button {
     color: white;
-    background-color: #CDC1FF;
+    background: linear-gradient(#CDC1FF, #A294F9);
     padding: 15px 40px;
     border-radius: 25px;
     margin-left: 20px;
@@ -108,7 +109,7 @@ nav div button:hover{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background: #E5D9F2;
+    background: linear-gradient(#aa9dff, #8364ff);
 }
 
 #cabecera h1 {
