@@ -21,6 +21,10 @@ html {
     color: white;
 }
 
+#navegador span{
+    font-size: 16px;
+}
+
 .violet {
     color: #7b69f3;
 }
@@ -66,9 +70,9 @@ html {
 }
 
 li:hover {
-    background: linear-gradient(#CDC1FF, #A294F9);
+    color: #A294F9;
     cursor: pointer;
-    border-radius: 25px;
+    
 }
 
 nav div button {
@@ -92,7 +96,7 @@ nav div button:hover{
 
 .indice_derecha {
     display: flex;
-    margin-right: 100px;
+    margin-right: 25px;
     list-style: none;
     align-items: center;
 }
@@ -107,9 +111,10 @@ nav div button:hover{
 
 #cabecera {
     padding-top: 30px;
+    color: white;
     padding-bottom: 30px;
     text-align: center;
-    background: linear-gradient(#aa9dff, #8364ff);
+    background: linear-gradient(#aa9dff, #9d88f0);
 }
 
 #cabecera h1 {
@@ -129,7 +134,7 @@ nav div button:hover{
 .btn1 {
     text-align: center;
     color:white;
-    background-color: #A294F9;
+    background: linear-gradient(#d1b9eb, #9d88f0);
     padding: 15px 40px;
     border-radius: 25px;
     margin: 25px;
@@ -138,12 +143,10 @@ nav div button:hover{
 .btn2 {
     text-align: center;
     color:white;
-    background: none;
     padding: 15px 40px;
     border-radius: 25px;
     margin: 25px;
-    border: 1px solid white;
-    background-color: #2f2b498a;
+    background: linear-gradient(#c188f0, #9745ee);
 }
 
 .btn2 img {
@@ -153,7 +156,7 @@ nav div button:hover{
 }
 
 .btn1:hover {
-    background: none;
+    background: linear-gradient(#9d88f0, #d1b9eb);
     cursor: pointer;
 }
 
@@ -249,41 +252,77 @@ nav div button:hover{
 }
 
 .about_us {
-    background-color: #E5D9F2;
+    background: linear-gradient(#d1b9eb, #9d88f0);
     padding-top: 75px;
     padding-bottom: 75px;  
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .background {
     display: flex;
     position: relative;
-    background-color: white;
+    background: linear-gradient(#ffffff, #e6e6e6);
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 10px;
     border-radius: 50px;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
 }
 
 .about_us_left {
-    width: 900px;
+    width: 1000px;
     margin-right: 20px;
 }
 
 .about_us_left h2 {
     font-size: 25px;
     margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .about_us_left p {
-    font-size: 15px;
+    font-size: 15px; 
 }
 
-.about_us_right {
-   
+.about_us img{
+    width: 250px;
+}
+
+#pie_pagina {
+    background: linear-gradient(#852982, #d6a8d6);
+    color: white;
+}
+
+.pie_pagina_izquierda {
+    margin-left: 100px;
+}
+
+.newsletter {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div .icons {
+    text-align: center;
+}
+
+.copy {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -297,6 +336,11 @@ nav div button:hover{
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+
+
+    #navegador span {
+        font-size: 14px;
     }
 
     #navegador img {
@@ -393,6 +437,22 @@ nav div button:hover{
     .articulo h3 {
         font-size: 13px;
     }
+
+    .background {
+        width: 80%;
+    }
+
+    .about_us_left h2 {
+        font-size: 20px;
+    }
+    
+    .about_us_left p {
+        font-size: 12px;
+    }
+
+    .about_us img{
+        width: 200px;
+    }
     
   }
 
@@ -470,6 +530,24 @@ nav div button:hover{
     .articulo div:first-child h2 {
         font-size: 30px;
     }
+
+    .background {
+        width: 90%;
+    }
+
+    .about_us_left h2 {
+        font-size: 20px;
+    }
+    
+    .about_us_left p {
+        font-size: 10px;
+    }
+
+    .about_us img{
+        width: 150px;
+    }
+
+
    }
 
 
