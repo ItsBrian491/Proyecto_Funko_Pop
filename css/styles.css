@@ -114,7 +114,7 @@ nav div button:hover{
     color: white;
     padding-bottom: 30px;
     text-align: center;
-    background: linear-gradient(#aa9dff, #9d88f0);
+    background: linear-gradient(#dcd9ec, #b3a4f0);
 }
 
 #cabecera h1 {
@@ -310,7 +310,7 @@ nav div button:hover{
 }
 
 .ownFunko {
-    background: linear-gradient( #9d88f0,#d1b9eb);
+    background: linear-gradient( #b9cdeb,#9fb7fa);
     padding-top: 75px;
     padding-bottom: 75px;  
     display: flex;
@@ -345,18 +345,18 @@ nav div button:hover{
 .btn4 {
     text-align: center;
     color:white;
-    background: linear-gradient(#d1b9eb, #9d88f0);
+    background: linear-gradient(#b9cdeb, #9fb7fa);
     padding: 15px 40px;
     border-radius: 25px;
 }
 
 .btn4:hover {
-    background: linear-gradient(#9d88f0, #d1b9eb);
+    background: linear-gradient(#8892f0, #b9c9eb);
     cursor: pointer;
 }
 
 #pie_pagina {
-    background: linear-gradient(#852982, #d6a8d6);
+    background: linear-gradient(#d1b9eb, #ee8cf1);
     color: white;
 }
 
