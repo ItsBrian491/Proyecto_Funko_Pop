@@ -258,7 +258,6 @@ nav div button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .background {
@@ -295,6 +294,67 @@ nav div button:hover{
     width: 250px;
 }
 
+.btn3 {
+    margin-top: 25px;
+    margin-left: 25px;
+    text-align: center;
+    color:white;
+    background: linear-gradient(#d1b9eb, #9d88f0);
+    padding: 15px 40px;
+    border-radius: 25px;
+}
+
+.btn3:hover {
+    background: linear-gradient(#9d88f0, #d1b9eb);
+    cursor: pointer;
+}
+
+.ownFunko {
+    background: linear-gradient( #9d88f0,#d1b9eb);
+    padding-top: 75px;
+    padding-bottom: 75px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ownFunko_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.ownFunko img{
+    width: 375px;
+}
+
+.ownFunko h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.ownFunko_right p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.btn4 {
+    text-align: center;
+    color:white;
+    background: linear-gradient(#d1b9eb, #9d88f0);
+    padding: 15px 40px;
+    border-radius: 25px;
+}
+
+.btn4:hover {
+    background: linear-gradient(#9d88f0, #d1b9eb);
+    cursor: pointer;
+}
+
 #pie_pagina {
     background: linear-gradient(#852982, #d6a8d6);
     color: white;
@@ -325,8 +385,8 @@ div .icons {
     font-size: 20px;
 }
 
+
 @media screen and (max-width: 1200px) {
-    
     *{
         font-size: 16px;
     }
@@ -453,7 +513,12 @@ div .icons {
     .about_us img{
         width: 200px;
     }
-    
+
+    .btn3 {
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 14px;
+    }   
   }
 
 @media screen and (max-width: 600px) {
@@ -547,6 +612,11 @@ div .icons {
         width: 150px;
     }
 
+    .btn3 {
+        padding: 15px 25px;
+        border-radius: 25px;
+        font-size: 13px;
+    }
 
    }
 
