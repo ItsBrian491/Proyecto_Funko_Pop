@@ -34,7 +34,7 @@
                 <a href="products.html">
                   <span>Products</span>
                   <span>
-                    <i class="fa-brands fa-product-hunt violet"></i>
+                    <i class="fa-solid fa-certificate violet"></i>
                   </span>
                 </a>
             </li>
@@ -52,7 +52,7 @@
                 <a href="form.html">
                   <span>Register</span>
                   <span>
-                    <i class="fa-solid fa-users violet"></i>
+                    <i class="fa-solid fa-link violet"></i>
                   </span>
                 </a>
             </li>
@@ -81,7 +81,10 @@
             <button id="rightBtn"><img class="flechas" src="images/flecha-derecha.png" alt="arrow_right"></button>
         </div>
         <br>
-        <button class="btn1">Get Started</button>
+        <a href="#getStarted">
+            <button class="btn1">Get Started
+        </a>
+        </button>
         <a href="https://www.youtube.com/watch?v=dHX5CDsuHPo" target="_blank">
         <button class="btn2">
             Watch Video<img src="images/Play_Buttom.png" alt="Play_Buttom">
@@ -170,7 +173,7 @@
     </article>
 
     <article class="ownFunko">
-        <div class="background">
+        <div class="background2">
 
             <div class="ownFunko_left">
                 <img src="images/ownFunko.png">
@@ -190,32 +193,33 @@
                         <button class="btn4">Personalize your Funko</button>
                     </a>
                 </div>
-            </div>          
+            </div>  
+        </div>        
     </article>
 
     <article class="reviews">
         <h1>REVIEW SECTION</h1>
         <div class="review-section">
             <div class="review">
-                <img src="funko1.jpg" alt="Funko Pop Star Wars">
-                <h3>Pepito de los palotes</h3>
-                <p>Este Funko Pop de Star Wars es increíble, muy detallado y genial para los fans de la saga. El diseño es perfecto, con un acabado de calidad.</p>
+                <img src="images/elonMusk.png" alt="Profile 1">
+                <h3>Elon Musk</h3>
+                <p>The Funko Pop arrived in perfect condition and on time! The packaging was excellent, ensuring that it stayed safe during delivery. I'm so happy with my purchase!</p>
                 <div class="rating">
                     <span>⭐⭐⭐⭐⭐</span>
                 </div>
             </div>
             <div class="review">
-                <img src="funko1.jpg" alt="Funko Pop Star Wars">
-                <h3>Pepito de los palotes</h3>
-                <p>Este Funko Pop de Star Wars es increíble, muy detallado y genial para los fans de la saga. El diseño es perfecto, con un acabado de calidad.</p>
+                <img src="images/nateGentile.png" alt="Profile 2">
+                <h3>Nate Gentile</h3>
+                <p>I'm impressed by the fast shipping and careful packaging of this Funko Pop. It looks amazing and is exactly as described. Definitely worth every penny!</p>
                 <div class="rating">
                     <span>⭐⭐⭐⭐</span>
                 </div>
             </div>
             <div class="review">
-                <img src="funko1.jpg" alt="Funko Pop Star Wars">
-                <h3>Pepito de los palotes</h3>
-                <p>Este Funko Pop de Star Wars es increíble, muy detallado y genial para los fans de la saga. El diseño es perfecto, con un acabado de calidad.</p>
+                <img src="images/xokas.png" alt="Profile 3">
+                <h3>Xokas</h3>
+                <p>Fantastic service! The Funko Pop was delivered quickly and was well-protected. It's in perfect condition and looks great on my shelf. I couldn't be more satisfied!</p>
                 <div class="rating">
                     <span>⭐⭐⭐⭐⭐</span>
                 </div>
@@ -229,21 +233,44 @@
                 <h2>Subscribe to our Newsletter</h2>
                 <p>Find out all the news about funkos</p>
                 <form>
-                    <input type="email" placeholder="Enter your email here">
+                    <label for="email" id="email-label">Email
+                        <input type="email" placeholder="Enter your email here" required id="email-label">
+                    </label>
+                    <label for="submit">
+                        <input type="submit" id="submit" value="Submit">
+                    </label>
                 </form>
             </div>
-            <div>
-                <h1>This project was made by:</h1>
-                <div class="icons">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css"></i>
-                    <i class="fa-brands fa-js"></i>
+            <div class="pie_pagina_derecha">
+                <div id="getStarted">
+                    <h2>Get Started</h2>
+                    <p>Fill in the following information.</p>
+                    <form>
+                        <label for="email" id="email-label">Email
+                            <input type="email" placeholder="Enter your email here" required id="email-label">
+                        </label>
+                        <label id="description">Comments
+                            <textarea rows="2" id="description" placeholder="What are you say?" required></textarea>
+                        </label>
+                        <label for="submit2">
+                            <input class="submit" type="submit" id="submit2" value="Submit">
+                        </label>
+                    </form>  
                 </div>
-                
+                <div class="project">
+                    <h1>This project was made by:</h1>
+                    <div class="icons">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div> 
+                </div>
             </div>
         </div>
         <hr>
         <p class="copy">Copyright @Egav. All Rights Reserved.</p>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-brands fa-github"></i>
     </footer>
     <script src="js/script.js"></script>
 </body>
