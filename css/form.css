@@ -1,11 +1,146 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
+#navegador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(#A294F9, #CDC1FF);
+  width: 100%;
+  padding: 15px;
+  color: white;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#7f6bff9d, #876bf5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: white;
+}
+  
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+  
+form {
+  background: linear-gradient(#b47af1, #9e4cfc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+  
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+select {
+  background-color: #fff;
+  padding-right: 30px;
+  font-size: 1em;
+}
+
+input[type="radio"] {
+  margin: 0 5px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0;
+}
+
+button {
+  padding: 12px;
+  background-color: #ffd000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #e6aa07;
+}
+@media (max-width: 1200px) {
+.container {
+  padding: 20px;
+}
+h1 {
+  font-size: 1.8em;
+}
+form {
+  width: 90%;
+  padding: 15px;
+}
+input[type="text"], input[type="date"], select, textarea {
+  font-size: 16px;
+}
+button {
+  font-size: 1.1em;
+}
+}
+
+@media (max-width: 600px) {
+#navegador {
+  flex-direction: column;
+  text-align: center;
+}
+.indice_derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.indice_derecha a {
+  margin: 5px 0;
+}
+h1 {
+  font-size: 1.6em;
+}
+form {
+  width: 100%;
+  padding: 10px;
+}
+input[type="text"], input[type="date"], select, textarea {
+  font-size: 14px;
+}
+button {
+  font-size: 1em;
+  padding: 10px;
+}
+}
+  
+  

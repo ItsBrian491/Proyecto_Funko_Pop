@@ -11,13 +11,24 @@ html {
 }
 
 #cabecera-form {
-    background: linear-gradient(#aea3f8, #795fe0);
+    background: linear-gradient(#7f6bff9d, #876bf5);
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #cabecera-form h1 {
@@ -25,6 +36,19 @@ html {
     font-size: 25px;
     color: white;
     margin-bottom: 25px;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .catalogo {
@@ -37,7 +61,7 @@ html {
 }
 
 .products {
-    background: linear-gradient(#ffffff, #e6e6e6);
+    background: linear-gradient(#ffffff, #b4b3b49d);
     margin-right: 50px;
     padding: 50px;
     display: flex;
@@ -45,12 +69,30 @@ html {
     justify-content: center;
     border-radius: 30px;
     margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInProduct 0.8s ease-out forwards;
+}
+
+@keyframes fadeInProduct {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .products img {
     width: 250px;
     height: 170px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.products img:hover {
+    transform: scale(1.05);
 }
 
 .cart {
@@ -61,11 +103,17 @@ html {
     border-radius: 25px;
     background-color: gainsboro;
     margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cart:hover {
     background-color: rgb(170, 168, 168);
     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cart:active {
+    background-color: rgb(130, 130, 130);
 }
 
 @media screen and (max-width: 1200px) {

@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 #navegador {
     display: flex;
     align-items: center;
@@ -152,6 +151,16 @@ nav div button:hover{
     transition: opacity 0.3s ease-in-out;
 }
 
+.spiderman {
+    width: 400px;
+    margin-top: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.spiderman:hover {
+    transform: scale(1.1);
+}
+
 #leftBtn {
     background: none;
     border: none;
@@ -221,8 +230,8 @@ nav div button:hover{
     font-size: 50px;
 }
 
+
 .allFunkos {
-    margin-top: 25px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -231,7 +240,19 @@ nav div button:hover{
     text-align: center;
     gap: 50px;
     width: 100%;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .funkos {
     display: flex;
@@ -249,6 +270,11 @@ nav div button:hover{
     width: 200px;
     height: 175px;
     margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.funkos img:hover {
+    transform: scale(1.1);
 }
 
 .description {
@@ -275,10 +301,6 @@ nav div button:hover{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
-}
-
-.view_more {
-    margin: auto;
 }
 
 .about_us {
@@ -406,6 +428,7 @@ nav div button:hover{
     font-size: 50px;
     padding-top: 40px;
     color: white;
+    animation: fadeIn 2s easy-out;
 }
 
 .review-section {
@@ -422,7 +445,30 @@ nav div button:hover{
     width: 90%;
     padding: 50px;
     border-radius: 50px;
-    margin-bottom: 50px;   
+    margin-bottom: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s forwards ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
+
+.review:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.review:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.review:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .review:last-child {
@@ -432,11 +478,39 @@ nav div button:hover{
 
 .review img {
     width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.review:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #pie_pagina {
     background: linear-gradient(#b47af1, #8221f1);
     color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .pie_pagina_izquierda {
@@ -555,6 +629,49 @@ textarea {
     font-size: 20px;
 }
 
+.btn1, .btn2, .btn3, .btn4 {
+    transition: all 0.5s ease;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    transform: scale(1.05);
+}
+
+input[type="email"], textarea {
+    transition: all 0.3s ease;
+}
+
+
+input[type="submit"]:hover {
+    background: #e6aa07;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.icons {
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.icons:hover {
+    color: #A294F9;
+}
+
+#getStarted {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media screen and (max-width: 1200px) {
     *{
@@ -643,7 +760,7 @@ textarea {
     .articulo div:first-child h2 {
         font-size: 40px;
     }
-    
+
     .allFunkos {
         margin-top: 25px;
         gap: 50px;
@@ -728,6 +845,44 @@ textarea {
 
     .review img {
         width: 75px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pie_pagina_izquierda, .pie_pagina_derecha {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pie_pagina_izquierda h2, .pie_pagina_derecha h2 {
+        font-size: 22px;
+    }
+
+    .pie_pagina_izquierda p, .pie_pagina_derecha p {
+        font-size: 14px;
+    }
+
+    .newsletter input[type="email"],
+    .newsletter input[type="submit"],
+    .newsletter textarea {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .project h1 {
+        font-size: 18px;
+    }
+
+    .copy {
+        font-size: 18px;
+    }
+
+    .icons {
+        font-size: 20px;
     }
   }
 
@@ -880,6 +1035,61 @@ textarea {
 
     .review img {
         width: 50px;
+    }
+
+    #pie_pagina {
+        padding: 10px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pie_pagina_izquierda, .pie_pagina_derecha {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .pie_pagina_izquierda h2, .pie_pagina_derecha h2 {
+        font-size: 20px;
+    }
+
+    .pie_pagina_izquierda p, .pie_pagina_derecha p {
+        font-size: 12px;
+    }
+
+    .newsletter input[type="email"],
+    .newsletter input[type="submit"],
+    .newsletter textarea {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .project h1 {
+        font-size: 16px;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+
+    .icons {
+        font-size: 18px;
+    }
+
+    #getStarted {
+        padding: 30px;
+    }
+
+    #getStarted h2 {
+        font-size: 24px;
+    }
+
+    #getStarted p {
+        font-size: 18px;
     }
 
    }

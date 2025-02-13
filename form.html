@@ -27,10 +27,35 @@
             </a>
         </div>
     </nav>
+    <div class="container">
+        <h1>Funko Pops Form</h1>
+        <form action="#" method="post">
+        <label for="name">Funko Pop Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <header id="cabecera-form">
-        <h1>THE OFICIAL PAGE OF EGAV</h1>
-    </header>
-    
+        <label for="character">Which character is it from?</label>
+        <input type="text" id="character" name="character" required>
+
+        <label for="collection">Is it part of a collection?</label>
+        <select id="collection" name="collection" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="condition">Condition of the Funko Pop:</label>
+        <div class="radio-group">
+            <input type="radio" id="new" name="condition" value="new" required><label for="new">New</label>
+            <input type="radio" id="used" name="condition" value="used"><label for="used">Used</label>
+        </div>
+
+        <label for="purchase-date">Purchase Date:</label>
+        <input type="date" id="purchase-date" name="purchase-date" required>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write any additional details here..."></textarea>
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
