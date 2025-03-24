@@ -659,6 +659,15 @@ input[type="submit"]:hover {
     animation: fadeIn 2s ease-out forwards;
 }
 
+.rss {
+    background-color: #af9bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
