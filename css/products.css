@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#cabecera-form {
+    background: linear-gradient(#7f6bff9d, #876bf5);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#cabecera-form h1 {
+    padding-top: 25px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 25px;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.products {
+    background: linear-gradient(#ffffff, #b4b3b49d);
+    margin-right: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInProduct 0.8s ease-out forwards;
+}
+
+@keyframes fadeInProduct {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.products img {
+    width: 250px;
+    height: 170px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.products img:hover {
+    transform: scale(1.05);
+}
+
+.cart {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    background-color: gainsboro;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart:hover {
+    background-color: rgb(170, 168, 168);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cart:active {
+    background-color: rgb(130, 130, 130);
+}
+
+@media screen and (max-width: 1200px) {
+    *{
+        font-size: 16px;
+    } 
+
+    #navegador li{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    } 
+}
